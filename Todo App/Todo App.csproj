@@ -49,8 +49,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Remove="Views\TodoListPage.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Images\check.png" />
 	  <None Remove="Resources\Images\plus.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiSplashScreen Include="Views\TodoListPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiSplashScreen>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -68,9 +78,6 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Views\TodoItemPage.xaml">
-	    <Generator></Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\TodoListPage.xaml">
 	    <Generator></Generator>
 	  </MauiXaml>
 	</ItemGroup>
