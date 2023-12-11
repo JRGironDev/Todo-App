@@ -64,7 +64,12 @@
 	<ItemGroup>
 	  <Folder Include="Data\" />
 	  <Folder Include="Models\" />
-	  <Folder Include="Views\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\TodoItemPage.xaml">
+	    <Generator></Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
