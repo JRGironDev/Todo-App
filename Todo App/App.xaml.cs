@@ -1,4 +1,6 @@
-﻿namespace Todo_App;
+﻿using Todo_App.Views;
+
+namespace Todo_App;
 
 public partial class App : Application
 {
@@ -6,6 +8,9 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
+		MainPage = new NavigationPage(new TodoListPage())
+		{
+			BarTextColor = Color.FromRgb(76, 187, 23)
+        };
 	}
 }
